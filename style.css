@@ -1,0 +1,104 @@
+.machine {
+    max-width: 32em;
+    margin: auto;
+    background: #464e4e;
+    box-shadow: 0 0 0 2px rgb(0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    background: #e1e6e6;
+    margin-bottom: 0.25em;
+    padding: 0.875em;
+    overflow: hidden;
+    text-align: center
+}
+
+.user-list {
+    background: #d1e8db8f;
+}
+
+.user-item {
+    display: inline-block;
+    position: relative;
+    width: 33.33333333%;
+}
+
+
+/* ส่วนแต่งตัวหนังสือ */
+
+.nameP,
+.in_stockP,
+.priceP,
+h1 {
+    line-height: 2em;
+    font-size: 1.125em;
+    background: #464e4e;
+    color: #ffffff;
+    text-align: center
+}
+
+img {
+    border-radius: 50%;
+    width: 9em;
+    height: 7em;
+    background-size: contain
+}
+
+div {
+    display: block;
+}
+
+html,
+body {
+    background: #7acccc;
+    font-family: 'Dosis', 'Menlo', monospace;
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    display: inline-block;
+    padding: 4px 9px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #8970f9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button {
+    display: inline-block;
+    padding: 4px 9px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #8970f9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #613ff7
+}
+
+.button:active {
+    background-color: #8970f9;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

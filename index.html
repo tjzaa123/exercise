@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="machine">
+        <!-- ส่วนแสดงสินค้า -->
+        <div class="section">
+            <h1>Inser Money Frist.Select Menu</h1>
+            <div class="user-list"></div>
+        </div>
+        <!-- ส่วนรับเงิน -->
+        <div class="section">
+            <form>
+                <span>Coin 10 Bath</span> <input type="number" name="ten" id="ten" placeholder="0" value="null" oninput="tally()">
+                <br>
+                <span>Coin 5 Bath</span> <input type="number" name="five" id="five" placeholder="0" value="null" oninput="tally()">
+                <br>
+                <span>Coin 2 Bath</span> <input type="number" name="two" id="two" placeholder="0" value="null" oninput="tally()">
+                <br>
+                <span>Coin 1 Bath</span> <input type="number" name="one" id="one" placeholder="0" value="null" oninput="tally()">
+                <!-- ส่วนแสดงเงินทั้งหมดที่รับมาและแสดงข้อความรายการสินค้าและเงินทอน -->
+                <p class="nameP">Totle Money : <span id="paid">0</span> B</p>
+                <p class="nameP" id="message"></p>
+            </form>
+        </div>
+        <!-- ส่วนเลือกสินค้า -->
+        <div class="section">
+            <div class="section">
+                <button class="button" value="Pepsi Max" id="1" onclick="dispenseMenu(0),calculateChange(0)" )>Pepsi Max</button>
+                <button class="disabled" value="Pepsi Diet" id="2" ) ">Pepsi Diet</button>
+            <button class=" button " value=" Coke " id=" 3 " onclick=" dispenseMenu(2),calculateChange(2) ">Coke</button>
+            <button class=" disabled " value=" Coke Vanilla (S) " id=" 4 " ">Coke Vanilla (S)</button>
+                <br><br>
+                <button class="button" value="Coke Vanilla (L)" id="6" onclick="dispenseMenu(4),calculateChange(4)">Coke Vanilla
+                    (L)</button>
+                <button class="button" value="Mountain Dew" id="7" onclick="dispenseMenu(5),calculateChange(5)">Mountain Dew</button>
+                <button class="button" value="Refune" id="Refune" onclick="clearRefune()">Cancel</button>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="scriptTwo.js "></script>
+</body>
+
+</html>
